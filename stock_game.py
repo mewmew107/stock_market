@@ -136,9 +136,8 @@ if st.session_state.month > 0:
             st.session_state.shares = temp_shares
 
             # 從第二月開始加薪
-            if st.session_state.month >= 2:
-                for t in teams:
-                    st.session_state.cash[t] += st.session_state.salary[t]
+            for t in teams:
+                st.session_state.cash[t] += st.session_state.salary[t]
 
             # 更新月份
             if st.session_state.month < 5:
