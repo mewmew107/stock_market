@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-
+#pip install pandas
 
 st.title("📈 現金流投資遊戲（買賣版）")
 
